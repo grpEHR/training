@@ -1,0 +1,33 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: Tips for using Git and GitHub
+  chapters:
+    - index.qmd
+    - 01-intro-git.qmd
+    - 02-installing-git.qmd
+    - 03-intro-github.qmd
+    - 04-git-and-github-workflow.qmd
+    - 05-making-pull-request.qmd
+    - 06-merging-branch-locally.qmd
+    - 07-rebasing-branch.qmd
+    - 08-common-errors.qmd
+    - 09-installing-python-and-os.qmd
+    - 10-os-repos.qmd
+    - 11-additional-topics.qmd
+    - 12-short-practical.qmd
+    - 13-session-info.qmd
+  repo-url: https://github.com/remlapmot/git-and-github-for-os
+  repo-actions: source
+  repo-branch: master
+  site-url: https://remlapmot.github.io/git-and-github-for-os/
+
+format:
+  html:
+    toc: true
+    link-external-icon: true
+    theme: cosmo
+    css: styles.css
+    code-overflow: wrap
