@@ -1,6 +1,8 @@
-# Tips for using Git and GitHub aimed at new uses of the OpenSAFELY system
+# grpEHR training
 
-Rendered at https://remlapmot.github.io/git-and-github-for-os/
+Tips for using Git and GitHub aimed at new uses of the OpenSAFELY system and some best practice tips.
+
+Rendered at <https://grpehr.github.io/grpehr-training/>
 
 To build/render the html output open the project in RStudio and either
 
