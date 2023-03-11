@@ -9,6 +9,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 <details>
 <summary>Click here for session information</summary>
 ```{r}
+sessionInfo()
 sessioninfo::session_info()
 quarto::quarto_version()
 ```
