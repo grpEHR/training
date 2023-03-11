@@ -1,6 +1,4 @@
----
-date: "`r format(Sys.time(), '%d %B %Y')`"
----
+# grpEHR best practice in the OpenSAFELY system
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
