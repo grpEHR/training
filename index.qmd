@@ -1,0 +1,13 @@
+---
+date: "`r format(Sys.time(), '%d %B %Y')`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction {.unnumbered}
+
+The following is intended as a set of tips for users of the [OpenSAFELY](https://www.opensafely.org/) system at the University of Bristol.
+
+Please use the menu to the left to read the different sections.
