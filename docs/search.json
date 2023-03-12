@@ -165,7 +165,7 @@
     "href": "01-10-os-repos.html#getting-started",
     "title": "10  OpenSAFELY repositories",
     "section": "10.2 Getting started",
-    "text": "10.2 Getting started\n\nSee OS page here\nIf creating a new repo create from the OS template here\n\n\n\n\n\n\n\n\n\nThis is already Git initialized\nImportant files\n\nproject.yaml\n\nDefines the jobs and the order in which they run\n\n/analysis/study_defintion.py\n\nDefines the study population extracted from the OpenSAFELY database\nThis should return .csv file/s of data to read into R\n\n/analysis/##_R-scripts.R\n\nYour analysis scripts"
+    "text": "10.2 Getting started\n\nSee OS page here\nIf creating a new repo create from the OS template here\n\n\n\n\n\n\n\n\n\nThis is already Git initialized\nImportant files\n\nproject.yaml\n\nDefines the jobs and the order in which they run\n\n/analysis/study_defintion.py\n\nDefines the study population extracted from the OpenSAFELY database\nThis should return .csv file/s of data to read into R\n\n/analysis/##_R-scripts.R\n\nYour analysis scripts (where ## is the number of your script)"
   },
   {
     "objectID": "01-10-os-repos.html#running-jobs-on-the-dummy-data",
