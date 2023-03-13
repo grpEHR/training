@@ -5,6 +5,6 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 
 ## Introduction {.unnumbered}
 
-This material is the training for grpEHR.
+This is the training material for grpEHR.
 
 Currently there are two parts; an introduction to Git and GitHub with a short exercise to complete, and best practice.
