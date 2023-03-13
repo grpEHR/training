@@ -4,7 +4,7 @@
     "href": "index.html#introduction",
     "title": "grpEHR training",
     "section": "Introduction",
-    "text": "Introduction\nThis material is the training for grpEHR.\nCurrently there are two parts; an introduction to Git and GitHub with a short exercise to complete, and best practice."
+    "text": "Introduction\nThis is the training material for grpEHR.\nCurrently there are two parts; an introduction to Git and GitHub with a short exercise to complete, and best practice."
   },
   {
     "objectID": "01-index.html#introduction",
@@ -14,18 +14,11 @@
     "text": "Introduction\nThe following is intended as a set of tips for people learning how to use Git and GitHub."
   },
   {
-    "objectID": "01-index.html#session-plan",
-    "href": "01-index.html#session-plan",
-    "title": "Introduction to using Git and GitHub",
-    "section": "Session plan",
-    "text": "Session plan\n\nIntroduction\nTips\nShort practical on making a pull request\nElsie - the OpenSAFELY codelist system"
-  },
-  {
     "objectID": "01-index.html#session-aims",
     "href": "01-index.html#session-aims",
     "title": "Introduction to using Git and GitHub",
     "section": "Session aims",
-    "text": "Session aims\nBy the end of the session you should\n\nhave a basic understanding of how Git works\nbe able to perform common Git operations using GitHub Desktop and the GitHub web interface, including\n\nclone a repo from GitHub\nmake a new branch\nmake commits\npush your branch to GitHub\nmake a pull request"
+    "text": "Session aims\nBy the end of the session you should\n\nhave a basic understanding of how Git works\nbe able to install Git and GitHub Desktop on your computer\nbe able to perform common Git operations using GitHub Desktop and the GitHub web interface, including\n\nclone a repo from GitHub\nmake a new branch\nmake commits\npush your branch to GitHub\nmake a pull request"
   },
   {
     "objectID": "01-index.html#guides-to-git-and-github",
@@ -298,6 +291,6 @@
     "href": "99-session-info.html#session-information",
     "title": "18  Session information for reproducibility",
     "section": "18.1 Session information",
-    "text": "18.1 Session information\n\n\nClick here for session information\n\n\nsessionInfo()\n## R version 4.2.2 (2022-10-31)\n## Platform: aarch64-apple-darwin20 (64-bit)\n## Running under: macOS Ventura 13.2.1\n## \n## Matrix products: default\n## LAPACK: /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRlapack.dylib\n## \n## locale:\n## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n## \n## attached base packages:\n## [1] stats     graphics  grDevices utils     datasets  methods   base     \n## \n## loaded via a namespace (and not attached):\n##  [1] htmlwidgets_1.6.1 compiler_4.2.2    fastmap_1.1.1     cli_3.6.0        \n##  [5] tools_4.2.2       htmltools_0.5.4   rstudioapi_0.14   rmarkdown_2.20   \n##  [9] knitr_1.42.3      xfun_0.37         digest_0.6.31     jsonlite_1.8.4   \n## [13] rlang_1.0.6       evaluate_0.20\nsessioninfo::session_info()\n## ─ Session info ───────────────────────────────────────────────────────────────\n##  setting  value\n##  version  R version 4.2.2 (2022-10-31)\n##  os       macOS Ventura 13.2.1\n##  system   aarch64, darwin20\n##  ui       X11\n##  language (EN)\n##  collate  en_US.UTF-8\n##  ctype    en_US.UTF-8\n##  tz       Europe/London\n##  date     2023-03-12\n##  pandoc   3.1.1 @ /opt/homebrew/bin/ (via rmarkdown)\n## \n## ─ Packages ───────────────────────────────────────────────────────────────────\n##  package     * version date (UTC) lib source\n##  cli           3.6.0   2023-01-09 [1] CRAN (R 4.2.2)\n##  digest        0.6.31  2022-12-11 [1] CRAN (R 4.2.2)\n##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.2.2)\n##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.2.0)\n##  htmltools     0.5.4   2022-12-07 [1] CRAN (R 4.2.2)\n##  htmlwidgets   1.6.1   2023-01-07 [1] CRAN (R 4.2.2)\n##  jsonlite      1.8.4   2022-12-06 [1] CRAN (R 4.2.2)\n##  knitr         1.42.3  2023-03-05 [1] Github (yihui/knitr@db4eafb)\n##  rlang         1.0.6   2022-09-24 [1] CRAN (R 4.2.0)\n##  rmarkdown     2.20    2023-01-19 [1] CRAN (R 4.2.2)\n##  rstudioapi    0.14    2022-08-22 [1] CRAN (R 4.2.1)\n##  sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.2.0)\n##  xfun          0.37    2023-01-31 [1] CRAN (R 4.2.0)\n## \n##  [1] /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/library\n## \n## ──────────────────────────────────────────────────────────────────────────────\nquarto::quarto_version()\n## [1] '1.2.335'"
+    "text": "18.1 Session information\n\n\nClick here for session information\n\n\nsessionInfo()\n## R version 4.2.2 (2022-10-31)\n## Platform: aarch64-apple-darwin20 (64-bit)\n## Running under: macOS Ventura 13.2.1\n## \n## Matrix products: default\n## LAPACK: /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRlapack.dylib\n## \n## locale:\n## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n## \n## attached base packages:\n## [1] stats     graphics  grDevices utils     datasets  methods   base     \n## \n## loaded via a namespace (and not attached):\n##  [1] compiler_4.2.2  fastmap_1.1.1   cli_3.6.0       tools_4.2.2    \n##  [5] htmltools_0.5.4 rstudioapi_0.14 rmarkdown_2.20  knitr_1.42     \n##  [9] xfun_0.37       digest_0.6.31   jsonlite_1.8.4  rlang_1.0.6    \n## [13] evaluate_0.20\nsessioninfo::session_info()\n## ─ Session info ───────────────────────────────────────────────────────────────\n##  setting  value\n##  version  R version 4.2.2 (2022-10-31)\n##  os       macOS Ventura 13.2.1\n##  system   aarch64, darwin20\n##  ui       X11\n##  language (EN)\n##  collate  en_US.UTF-8\n##  ctype    en_US.UTF-8\n##  tz       Europe/London\n##  date     2023-03-13\n##  pandoc   3.1.1 @ /opt/homebrew/bin/ (via rmarkdown)\n## \n## ─ Packages ───────────────────────────────────────────────────────────────────\n##  package     * version date (UTC) lib source\n##  cli           3.6.0   2023-01-09 [1] CRAN (R 4.2.0)\n##  digest        0.6.31  2022-12-11 [1] CRAN (R 4.2.0)\n##  evaluate      0.20    2023-01-17 [1] CRAN (R 4.2.0)\n##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.2.0)\n##  htmltools     0.5.4   2022-12-07 [1] CRAN (R 4.2.0)\n##  jsonlite      1.8.4   2022-12-06 [1] CRAN (R 4.2.0)\n##  knitr         1.42    2023-01-25 [1] CRAN (R 4.2.0)\n##  rlang         1.0.6   2022-09-24 [1] CRAN (R 4.2.0)\n##  rmarkdown     2.20    2023-01-19 [1] CRAN (R 4.2.0)\n##  rstudioapi    0.14    2022-08-22 [1] CRAN (R 4.2.0)\n##  sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.2.0)\n##  xfun          0.37    2023-01-31 [1] CRAN (R 4.2.0)\n## \n##  [1] /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/library\n## \n## ──────────────────────────────────────────────────────────────────────────────\nquarto::quarto_version()\n## [1] '1.2.335'"
   }
 ]

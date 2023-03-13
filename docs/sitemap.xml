@@ -2,86 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://grpehr.github.io/grpehr-training/index.html</loc>
-    <lastmod>2023-03-12T08:41:11.073Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.057Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-index.html</loc>
-    <lastmod>2023-03-12T08:41:11.073Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.058Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-01-intro-git.html</loc>
-    <lastmod>2023-03-12T08:41:11.074Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.058Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-02-installing-git.html</loc>
-    <lastmod>2023-03-12T08:41:11.074Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.058Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-03-intro-github.html</loc>
-    <lastmod>2023-03-12T08:41:11.074Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.059Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-04-git-and-github-workflow.html</loc>
-    <lastmod>2023-03-12T08:41:11.074Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.059Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-05-making-pull-request.html</loc>
-    <lastmod>2023-03-12T08:41:11.075Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.059Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-06-merging-branch-locally.html</loc>
-    <lastmod>2023-03-12T08:41:11.075Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.060Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-07-rebasing-branch.html</loc>
-    <lastmod>2023-03-12T08:41:11.075Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.060Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-08-common-errors.html</loc>
-    <lastmod>2023-03-12T08:41:11.077Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.060Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-09-installing-python-and-os.html</loc>
-    <lastmod>2023-03-12T08:41:11.078Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.063Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-10-os-repos.html</loc>
-    <lastmod>2023-03-12T08:41:11.078Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.063Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-11-additional-topics.html</loc>
-    <lastmod>2023-03-12T08:41:11.078Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.063Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/01-12-short-practical.html</loc>
-    <lastmod>2023-03-12T08:41:11.081Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.063Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/02-index.html</loc>
-    <lastmod>2023-03-12T08:41:11.081Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.064Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/02-01-study-definition.html</loc>
-    <lastmod>2023-03-12T08:41:11.081Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.064Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/02-02-r-code.html</loc>
-    <lastmod>2023-03-12T08:41:11.082Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.064Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/02-03-outputs.html</loc>
-    <lastmod>2023-03-12T08:41:11.082Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.065Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/02-04-misc.html</loc>
-    <lastmod>2023-03-12T08:41:11.082Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.065Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/02-05-docker-apple-silicon.html</loc>
-    <lastmod>2023-03-12T08:41:11.083Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.065Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/grpehr-training/99-session-info.html</loc>
-    <lastmod>2023-03-12T08:41:11.083Z</lastmod>
+    <lastmod>2023-03-13T07:06:26.065Z</lastmod>
   </url>
 </urlset>
