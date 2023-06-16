@@ -78,7 +78,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 - Explanation of these is (from [here](https://www.tutorialspoint.com/what-is-git-folder-and-why-is-it-hidden))  
   ```{r}
   knitr::include_graphics("img/dot-git-folder-explanation.png")
-  ```  
+  ```
 
 ## Common Git commands
 
