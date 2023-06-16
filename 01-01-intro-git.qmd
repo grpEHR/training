@@ -99,3 +99,9 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
   git merge
   git fetch 
   ```  
+
+- If you use one of these commands and receive an error message including the text
+  ```
+  fatal: not under version control
+  ```
+  it likely means that you have made a typo in the filename you included in your Git command.
