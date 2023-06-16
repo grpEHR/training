@@ -30,3 +30,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
   ``` r
   print(R.version.string)
   ```  
+
+## Code review
+
+The Tidyteam (i.e., of the [tidyverse](https://www.tidyverse.org/), [tidymodels](https://www.tidymodels.org/), and [mlops](https://vetiver.rstudio.com/)) code review principles are available [here](https://code-review.tidyverse.org/) bear in mind the comments relate more to coding packages rather than analysis scripts.
