@@ -280,6 +280,13 @@
     "text": "16.2 Python and R versions\n\nThe versions of Python and R in their respective OpenSAFELY Docker containers are (as of 15th February 2023):\n\nPython 3.8.10\nR 4.0.5 (was R 4.0.2 upto and including 15/02/2023)\n\nThe Python and R code run within their respective Docker containers. Hence the version of Python and R used to run your analyses are the versions of Python and R in these Docker containers and not the versions of Python and R on your computer\nTo see the Python version number insert in your study_definition.py\nimport sys\nprint(sys.implementation.version)\nTo see the R version number insert into one of your R analysis scripts\nprint(R.version.string)"
   },
   {
+    "objectID": "02-04-misc.html#code-review",
+    "href": "02-04-misc.html#code-review",
+    "title": "16  Miscellaneous",
+    "section": "16.3 Code review",
+    "text": "16.3 Code review\nThe Tidyteam (i.e., of the tidyverse, tidymodels, and mlops) code review principles are available here bear in mind the comments relate more to coding packages rather than analysis scripts."
+  },
+  {
     "objectID": "02-05-docker-apple-silicon.html",
     "href": "02-05-docker-apple-silicon.html",
     "title": "17  Rosetta for Linux Docker feature on Apple Silicon Macs",
