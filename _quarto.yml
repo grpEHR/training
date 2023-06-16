@@ -28,10 +28,10 @@ book:
         - 02-04-misc.qmd
         - 02-05-docker-apple-silicon.qmd
     - 99-session-info.qmd
-  repo-url: https://github.com/grpEHR/grpehr-training
+  repo-url: https://github.com/grpEHR/training
   repo-actions: source
   repo-branch: main
-  site-url: https://grpehr.github.io/grpehr-training/
+  site-url: https://grpehr.github.io/training/
 
 format:
   html:
