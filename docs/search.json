@@ -46,7 +46,7 @@
     "href": "01-01-intro-git.html#common-git-commands",
     "title": "1  Intro to Git",
     "section": "1.3 Common Git commands",
-    "text": "1.3 Common Git commands\n\nI recommend you use GitHub Desktop instead of these commands\nThese commands are what GitHub Desktop is using behind the scenes\nGit is the name of the program, git is the name of the executable available at your command line\ngit init \ngit add &lt;filename&gt;\ngit status\ngit commit -m \"Your commit message\"\ngit commit --amend -m \"Your amended commit message\"\ngit push \ngit pull \ngit clone\ngit branch\ngit checkout\ngit merge\ngit fetch"
+    "text": "1.3 Common Git commands\n\nI recommend you use GitHub Desktop instead of these commands\nThese commands are what GitHub Desktop is using behind the scenes\nGit is the name of the program, git is the name of the executable available at your command line\ngit init \ngit add &lt;filename&gt;\ngit status\ngit commit -m \"Your commit message\"\ngit commit --amend -m \"Your amended commit message\"\ngit push \ngit pull \ngit clone\ngit branch\ngit checkout\ngit merge\ngit fetch \nIf you use one of these commands and receive an error message including the text\nfatal: not under version control\nit likely means that you have made a typo in the filename you included in your Git command."
   },
   {
     "objectID": "01-02-installing-git.html#installing-git",
