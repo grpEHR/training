@@ -1,6 +1,6 @@
 ---
 author: "grpEHR"
-date: "`r format(Sys.time(), '%d %B %Y')`"
+date: "2021-10-25"
 ---
 
 ## Introduction {.unnumbered}
