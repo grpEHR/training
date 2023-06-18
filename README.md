@@ -4,36 +4,37 @@ Tips for using Git and GitHub aimed at new users of the [OpenSAFELY](https://www
 
 Rendered at <https://grpehr.github.io/training/>
 
-To build/render the html output open the project in RStudio and either
+To build/render the html output
 
-* Install Quarto from say [here](https://quarto.org/docs/get-started/)
-* open the *Build* pane click the *Build Website* button
+* Install Quarto from [here](https://quarto.org/docs/get-started/) or on macOS install from Homebrew with
+  ```
+  brew install --cask quarto
+  ```
+* Open the RStudio project in RStudio by double-clicking the *training.Rproj* file
+* In RStudio open the *Build* pane and click the *Build Website* button
 * or, run in R
+  ```r
+  # install.packages('quarto')
+  quarto::quarto_render()
+  ```
 
-```r
-# install.packages('quarto')
-quarto::quarto_render()
-```
+  Or in a terminal, run
+  ```bash
+  quarto render
+  ```
 
-Or at the command line
+* Commit the changes to both the source *.qmd* files and *.html* output in the *docs* directory into the repo.
 
-```bash
-quarto render
-```
-
-When editing the project preview with
-
-```r
-quarto::quarto_preview()
-```
-
-or 
-
-```bash
-quarto preview
-```
-And stop the process with <kbd>Ctrl</kbd>+<kbd>C</kbd> or with
-
-```r
-quarto::quarto_preview_stop()
-```
+* When editing the project, you can preview the html output with
+  ```r
+  quarto::quarto_preview()
+  ```
+  which is stopped with
+  ```r
+  quarto::quarto_preview_stop()
+  ```
+  or in a terminal, run
+  ```bash
+  quarto preview
+  ```
+  which is stopped by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the same terminal window
