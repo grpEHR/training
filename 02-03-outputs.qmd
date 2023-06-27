@@ -8,13 +8,13 @@ All outputs for release should be classified as `moderately_sensitive` in action
 
 ## Tables
 
-  - Use `readr::write_csv()` to save `.csv.gz` files that will be sent to output checkers.
+  - Use `readr::write_csv()` to save `.csv` files that will be sent to output checkers.
 
     ``` r
     readr::write_csv(object, 
-                     path = file.path("output", "mydata.csv.gz"))
+                     path = file.path("output", "mydata.csv"))
     ```  
-    (Note that in more recent versions of the **readr** package the `path` argument has been renamed to `file`.)
+    (Note that in more recent versions of the **readr** package the `path` argument has been renamed to `file`. And that large highly sensitive datasets should be saved as a compressed csv file, i.e., in `.csv.gz` format.)
   - Do not save outputs to subdirectories of the `output` folder, otherwise running the study definition on GitHub Actions will probably fail with an error message such as  
     ```{r}
     knitr::include_graphics("img/output-subdir-error.png")
@@ -45,7 +45,7 @@ All outputs for release should be classified as `moderately_sensitive` in action
 ## Releasing output
 
 - Ensure your outputs are in the correct formats 
-  - `.csv.gz` (not `.rds` or `.Rdata`) for tables of data
+  - `.csv` (not `.rds` or `.Rdata`) for tables of data
   - `.txt` or `.html` if you want to view them in L4
 - Ensure your outputs are marked as `moderately_sensitive` in your `project.yaml`
 - To release an output, please complete the 'Output files for review' section of [this form](https://docs.opensafely.org/documents/OpenSAFELY_Output_Review_Form_15_11_21.docx) and email to your assigned Bristol L4 access person
