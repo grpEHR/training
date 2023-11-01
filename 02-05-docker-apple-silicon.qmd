@@ -4,12 +4,18 @@
 knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 
-If you have an Apple Silicon Mac if you enable the Rosetta for Linux beta feature in Docker the OpenSAFELY Docker containers will run faster on your machine.
+From Docker version 4.25.0 the Rosetta for Linux feature is now enabled. We recommend you leave this enabled, as the OpenSAFELY Docker containers will run faster on your machine. To check it is enabled
 
-To enable this 
+* Go into Docker Desktop Dashboard
+* Go into Settings | General tab
+* Check the box for *Use Rosetta for x86/amd64 emulation on Apple Silicon*
+  ```{r, out.width="100%"}
+  knitr::include_graphics("img/docker-rosetta-linux-settings.png")
+  ```
 
-* Make sure you have Docker version 4.16.0 or higher installed
-* Open the Docker dashboard and go into Settings (click the cog icon in top right hand corner)
+If you are using a version of Docker between versions 4.16.0 and 4.25.0 we recommend enabling this feature which was then in beta. To enable this 
+
+* Open the Docker Desktop Dashboard and go into Settings (click the cog icon in top right hand corner)
 * Go to *Features in development* and within that the *Beta features tab*
 * Check the box for *Use Rosetta for x86/amd64 emulation on Apple Silicon*
 * Click *Apply & restart*
