@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
   - (Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)  
     ```{r}
     #| out-width: "50%"
-    #| fig-cap: "Image: <a href='https://xkcd.com/1597/>'> xkcd.com/1597</a>"
+    #| fig-cap: "Image: <a href='https://xkcd.com/1597/'> xkcd.com/1597</a>"
     #| fig-alt: "XKCD comic 1597 showing how to use Git"
     knitr::include_graphics("https://imgs.xkcd.com/comics/git.png")
     ```  
