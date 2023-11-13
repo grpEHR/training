@@ -32,11 +32,15 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 - Git is better described as a *content addressable filesystem* which translates to *Git tracks the contents of the files in your repo*
   - Git creates a little database of the contents of your files - snapshots (commits) are taken when you tell it to
   - Git looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save  
-    ```{r, out.width="100%"}
+
+    ```{r}
+    #| column: screen-inset-right
     knitr::include_graphics("img/no-local-changes.png")
     ```  
+
   - Git takes snapshots of your files - when you tell it to - *commits* - I saved my file from above, enter a commit message and click "Commit to master"
     ```{r}
+    #| column: screen-inset-right
     knitr::include_graphics("img/stashed-changes.png")
     ```  
   - Commits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time  
