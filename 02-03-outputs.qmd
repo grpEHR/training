@@ -16,7 +16,7 @@ All outputs for release should be classified as `moderately_sensitive` in action
     ```  
     (Note that in more recent versions of the **readr** package the `path` argument has been renamed to `file`. And that large highly sensitive datasets should be saved as a compressed csv file, i.e., in `.csv.gz` format.)
   - Do not save outputs to subdirectories of the `output` folder, otherwise running the study definition on GitHub Actions will probably fail with an error message such as  
-    ```{r}
+    ```{r, out.width="75%"}
     knitr::include_graphics("img/output-subdir-error.png")
     ```
     ```
