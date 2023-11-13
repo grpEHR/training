@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
     knitr::include_graphics("img/tp-test-org_test-code-button-owgd.png")
     ```  
   - Click `Clone` in the box which appears in GitHub Desktop  
-    ```{r, out.width = "65%"}
+    ```{r, out.width = "100%"}
     knitr::include_graphics("img/gd-clone-box.png")
     ```  
   - Go to the Making a pull request page [here](05-making-pull-request.html)
