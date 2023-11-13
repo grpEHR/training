@@ -19,6 +19,8 @@ All outputs for release should be classified as `moderately_sensitive` in action
     ```{r, out.width="75%"}
     knitr::include_graphics("img/output-subdir-error.png")
     ```
+    
+    ::: {.column-screen-inset-right}
     ```
     Error in file(file, ifelse(append, "a", "w")) : 
        cannot open the connection
@@ -35,7 +37,8 @@ All outputs for release should be classified as `moderately_sensitive` in action
      6: write.csv(table1_all$table_body, here::here("output", "descriptive",
 
     Error: Process completed with exit code 1.
-    ```  
+    ```
+    :::
 
 ## Figures
 
