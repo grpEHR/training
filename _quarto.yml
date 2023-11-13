@@ -40,3 +40,8 @@ format:
     theme: cosmo
     css: styles.css
     code-overflow: wrap
+    grid:
+      sidebar-width: 200px
+      body-width: 950px
+      margin-width: 150px
+      gutter-width: 1.5rem
