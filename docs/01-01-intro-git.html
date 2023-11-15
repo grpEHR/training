@@ -290,7 +290,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/grpEHR/training/blob/main/01-01-intro-git.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -309,7 +309,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="background-info" class="level2" data-number="1.1">
+<section id="background-info" class="level2 page-columns page-full" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="background-info"><span class="header-section-number">1.1</span> Background info</h2>
 <ul>
 <li>Git was written to allow developers work on the source code of the Linux kernel (text files)
@@ -344,47 +344,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div></li>
-<li><p>Repos on GitHub are already Git initialised</p>
-<ul>
+</ul></li>
+<li>Repos on GitHub are already Git initialised</li>
 <li>When you clone them down to your computer they work in GitHub Desktop</li>
-</ul></li>
-</ul></li>
 <li>Git is commonly referred to as version control software</li>
-<li>Git is better described as a <em>content addressable filesystem</em> which translates to <em>Git tracks the contents of the files in your repo</em>
-<ul>
-<li><p>Git creates a little database of the contents of your files - snapshots (commits) are taken when you tell it to</p></li>
-<li><p>Git looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
+<li>Git is better described as a content addressable filesystem</li>
+<li>This means that Git tracks the contents of the files in your repo</li>
+<li>Git creates a little database of the contents of your files</li>
+<li>Snapshots (commits) are taken when you tell it to</li>
+<li>Git looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save</li>
+</ul>
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell-output-display column-screen-inset-right">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/no-local-changes.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p><img src="img/no-local-changes.png" class="img-fluid figure-img" width="1123"></p>
 </figure>
 </div>
 </div>
-</div></li>
-<li><p>Git takes snapshots of your files - when you tell it to - <em>commits</em> - I saved my file from above, enter a commit message and click “Commit to master”</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
+</div>
+<ul>
+<li>Git takes snapshots of your files when you tell it to, these are called <em>commits</em></li>
+<li>I saved my file from above, enter a commit message and click “Commit to master”</li>
+</ul>
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell-output-display column-screen-inset-right">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/stashed-changes.png" class="img-fluid figure-img" width="1482"></p>
 </figure>
 </div>
 </div>
-</div></li>
-<li><p>Commits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+</div>
+<ul>
+<li>Commits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time</li>
+</ul>
+<div class="cell page-columns page-full" data-layout-align="left">
+<div class="cell-output-display column-screen-inset-right">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="img/git-commit-hash-1.png" class="img-fluid figure-img" width="714"></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell-output-display column-screen-inset-right">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/git-commit-hash-2.png" class="img-fluid figure-img" width="1355"></p>
@@ -392,27 +397,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell-output-display column-screen-inset-right">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/git-commit-hash-3.png" class="img-fluid figure-img" width="1401"></p>
 </figure>
 </div>
 </div>
-</div></li>
-<li><p>Git knows the state of your files at every commit</p>
+</div>
+<ul>
+<li>Git knows the state of your files at every commit
 <ul>
 <li>You can easily restore your files to a previous state</li>
 </ul></li>
-<li><p>For Git the state of your files only changes when their contents change</p>
+<li>For Git the state of your files only changes when their contents change
 <ul>
 <li>If you reopen a file, make no changes, then close it, Git will show no changes in your repo</li>
 <li>If you add an empty folder/directory to your repo Git will show no changes in your repo</li>
 <li>This differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems</li>
 </ul></li>
-<li><p>I recommend not to place your Git repos in a location that is sync’d by either OneDrive or Google Drive</p></li>
-</ul></li>
+<li>I recommend not to place your Git repos in a location that is sync’d by either OneDrive or Google Drive</li>
 </ul>
 </section>
 <section id="the-.git-folder" class="level2" data-number="1.2">
@@ -425,7 +430,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/windows-explorer-repo.png" class="img-fluid figure-img" style="width:66.0%"></p>
+<p><img src="img/windows-explorer-repo.png" class="img-fluid figure-img" style="width:75.0%"></p>
 </figure>
 </div>
 </div>
@@ -445,7 +450,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/dot-git-folder-contents.png" class="img-fluid figure-img" style="width:66.0%"></p>
+<p><img src="img/dot-git-folder-contents.png" class="img-fluid figure-img" style="width:75.0%"></p>
 </figure>
 </div>
 </div>
@@ -480,9 +485,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge</span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>If you use one of these commands and receive an error message including the text</p>
-<pre><code>fatal: not under version control</code></pre>
-<p>it likely means that you have made a typo in the filename you included in your Git command.</p></li>
+<li><p>If you use one of these commands and receive an error message including the text below, it can mean that you have made a typo in the filename you included in your Git command</p>
+<pre><code>fatal: not under version control</code></pre></li>
 </ul>
 
 
