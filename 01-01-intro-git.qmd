@@ -57,14 +57,18 @@ knitr::include_graphics("img/stashed-changes.png")
 - Commits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time  
 
 ```{r}
+#| column: screen-inset-right
+#| fig-align: left
 knitr::include_graphics("img/git-commit-hash-1.png")
 ```
 
 ```{r}
+#| column: screen-inset-right
 knitr::include_graphics("img/git-commit-hash-2.png")
 ```  
 
 ```{r}
+#| column: screen-inset-right
 knitr::include_graphics("img/git-commit-hash-3.png")
 ```
 
