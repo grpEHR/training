@@ -2,86 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://grpehr.github.io/training/index.html</loc>
-    <lastmod>2023-11-15T14:17:15.300Z</lastmod>
+    <lastmod>2024-03-28T10:23:38.564Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-index.html</loc>
-    <lastmod>2023-11-15T14:17:15.303Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.511Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-01-intro-git.html</loc>
-    <lastmod>2023-11-15T14:17:15.307Z</lastmod>
+    <lastmod>2023-11-15T14:37:37.247Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-02-installing-git.html</loc>
-    <lastmod>2023-11-15T14:17:15.311Z</lastmod>
+    <lastmod>2023-11-14T18:07:49.984Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-03-intro-github.html</loc>
-    <lastmod>2023-11-15T14:17:15.313Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.510Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-04-git-and-github-workflow.html</loc>
-    <lastmod>2023-11-15T14:17:15.316Z</lastmod>
+    <lastmod>2023-11-14T18:07:49.984Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-05-making-pull-request.html</loc>
-    <lastmod>2023-11-15T14:17:15.319Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.511Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-06-merging-branch-locally.html</loc>
-    <lastmod>2023-11-15T14:17:15.322Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.511Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-07-rebasing-branch.html</loc>
-    <lastmod>2023-11-15T14:17:15.325Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.511Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-08-common-errors.html</loc>
-    <lastmod>2023-11-15T14:17:15.329Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.511Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-09-installing-python-and-os.html</loc>
-    <lastmod>2023-11-15T14:17:15.333Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.511Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-10-os-repos.html</loc>
-    <lastmod>2023-11-15T14:17:15.336Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.511Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-11-additional-topics.html</loc>
-    <lastmod>2023-11-15T14:17:15.339Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.511Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/01-12-short-practical.html</loc>
-    <lastmod>2023-11-15T14:17:15.341Z</lastmod>
+    <lastmod>2023-11-14T18:07:49.985Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/02-index.html</loc>
-    <lastmod>2023-11-15T14:17:15.344Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.512Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/02-01-study-definition.html</loc>
-    <lastmod>2023-11-15T14:17:15.348Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.511Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/02-02-r-code.html</loc>
-    <lastmod>2023-11-15T14:17:15.351Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.512Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/02-03-outputs.html</loc>
-    <lastmod>2023-11-15T14:17:15.354Z</lastmod>
+    <lastmod>2023-11-15T14:37:37.247Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/02-04-misc.html</loc>
-    <lastmod>2023-11-15T14:17:15.357Z</lastmod>
+    <lastmod>2023-06-16T13:36:08.814Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/02-05-docker-apple-silicon.html</loc>
-    <lastmod>2023-11-15T14:17:15.359Z</lastmod>
+    <lastmod>2023-11-05T17:59:54.498Z</lastmod>
   </url>
   <url>
     <loc>https://grpehr.github.io/training/99-session-info.html</loc>
-    <lastmod>2023-11-15T14:17:15.364Z</lastmod>
+    <lastmod>2023-06-16T13:15:38.512Z</lastmod>
   </url>
 </urlset>

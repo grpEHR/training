@@ -1,303 +1,655 @@
 [
   {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "grpEHR training",
-    "section": "Introduction",
-    "text": "Introduction\nThis is the training material for grpEHR.\nCurrently there are two parts; an introduction to Git and GitHub with a short exercise to complete, and best practice."
+    "section": "",
+    "text": "Introduction\nThis is the training material for grpEHR.\nCurrently there are two parts; an introduction to Git and GitHub with a short practical exercise to complete, and best practice.\nYou can use the menu of the left handside to navigate between parts and pages, and use the menu on the right handside to navigate between sections within a page.\nIf you spot any typos or areas for improvement do click the View source link on the right menu and submit a PR to the repo with your suggestions.",
+    "crumbs": [
+      "Introduction"
+    ]
   },
   {
-    "objectID": "01-index.html#introduction",
-    "href": "01-index.html#introduction",
+    "objectID": "01-index.html",
+    "href": "01-index.html",
     "title": "Introduction to using Git and GitHub",
-    "section": "Introduction",
-    "text": "Introduction\nThe following is intended as a set of tips for people learning how to use Git and GitHub."
+    "section": "",
+    "text": "Introduction\nThe following is intended as a set of tips for people learning how to use Git and GitHub.",
+    "crumbs": [
+      "Introduction to using Git and GitHub"
+    ]
   },
   {
     "objectID": "01-index.html#session-aims",
     "href": "01-index.html#session-aims",
     "title": "Introduction to using Git and GitHub",
     "section": "Session aims",
-    "text": "Session aims\nBy the end of the session you should\n\nhave a basic understanding of how Git works\nbe able to install Git and GitHub Desktop on your computer\nbe able to perform common Git operations using GitHub Desktop and the GitHub web interface, including\n\nclone a repo from GitHub\nmake a new branch\nmake commits\npush your branch to GitHub\nmake a pull request"
+    "text": "Session aims\nBy the end of the session you should\n\nhave a basic understanding of how Git works\nbe able to install Git and GitHub Desktop on your computer\nbe able to perform common Git operations using GitHub Desktop and the GitHub web interface, including\n\nclone a repo from GitHub\nmake a new branch\nmake commits\npush your branch to GitHub\nmake a pull request",
+    "crumbs": [
+      "Introduction to using Git and GitHub"
+    ]
   },
   {
     "objectID": "01-index.html#guides-to-git-and-github",
     "href": "01-index.html#guides-to-git-and-github",
     "title": "Introduction to using Git and GitHub",
     "section": "Guides to Git and GitHub",
-    "text": "Guides to Git and GitHub\nThere are many excellent guides to Git and GitHub online, e.g.,\n\nIntro to GitHub here\nGitHub Training & Guides YouTube channel here\nGit documentation and training here\nHadley Wickham on Git here\nJenny Bryan on Git and GitHub with R here\n\nAnd most relevantly the OpenSAFELY documentation here."
+    "text": "Guides to Git and GitHub\nThere are many excellent guides to Git and GitHub online, e.g.,\n\nIntro to GitHub here\nGitHub Training & Guides YouTube channel here\nGit documentation and training here\nHadley Wickham on Git here\nJenny Bryan on Git and GitHub with R here\n\nAnd most relevantly the OpenSAFELY documentation here.",
+    "crumbs": [
+      "Introduction to using Git and GitHub"
+    ]
+  },
+  {
+    "objectID": "01-01-intro-git.html",
+    "href": "01-01-intro-git.html",
+    "title": "1  Intro to Git",
+    "section": "",
+    "text": "1.1 Background info",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Intro to Git</span>"
+    ]
   },
   {
     "objectID": "01-01-intro-git.html#background-info",
     "href": "01-01-intro-git.html#background-info",
     "title": "1  Intro to Git",
-    "section": "1.1 Background info",
-    "text": "1.1 Background info\n\nGit was written to allow developers work on the source code of the Linux kernel (text files)\n\nOne kernel release they got in a terrible mess\nThis provoked Linus Torvalds into action\nFor an excellent insight into his thinking watch this talk he gave at Google here\n\n(Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)\n\n\n\n\n\nImage:  xkcd.com/1597\n\n\n\n\n\nA Git repository is a folder/directory on your computer which has been Git initialised\n\nUsing either the command line\ngit init mynewfolder\nOr GitHub Desktop\n\n\n\n\n\n\n\n\n\n\nRepos on GitHub are already Git initialised\nWhen you clone them down to your computer they work in GitHub Desktop\nGit is commonly referred to as version control software\nGit is better described as a content addressable filesystem\nThis means that Git tracks the contents of the files in your repo\nGit creates a little database of the contents of your files\nSnapshots (commits) are taken when you tell it to\nGit looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save\n\n\n\n\n\n\n\n\n\n\n\nGit takes snapshots of your files when you tell it to, these are called commits\nI saved my file from above, enter a commit message and click “Commit to master”\n\n\n\n\n\n\n\n\n\n\n\nCommits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit knows the state of your files at every commit\n\nYou can easily restore your files to a previous state\n\nFor Git the state of your files only changes when their contents change\n\nIf you reopen a file, make no changes, then close it, Git will show no changes in your repo\nIf you add an empty folder/directory to your repo Git will show no changes in your repo\nThis differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems\n\nI recommend not to place your Git repos in a location that is sync’d by either OneDrive or Google Drive"
+    "section": "",
+    "text": "Git was written to allow developers work on the source code of the Linux kernel (text files)\n\nOne kernel release they got in a terrible mess\nThis provoked Linus Torvalds into action\nFor an excellent insight into his thinking watch this talk he gave at Google here\n\n(Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)\n\n\n\n\n\nImage:  xkcd.com/1597\n\n\n\n\n\nA Git repository is a folder/directory on your computer which has been Git initialised\n\nUsing either the command line\ngit init mynewfolder\nOr GitHub Desktop\n\n\n\n\n\n\n\n\n\n\nRepos on GitHub are already Git initialised\nWhen you clone them down to your computer they work in GitHub Desktop\nGit is commonly referred to as version control software\nGit is better described as a content addressable filesystem\nThis means that Git tracks the contents of the files in your repo\nGit creates a little database of the contents of your files\nSnapshots (commits) are taken when you tell it to\nGit looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save\n\n\n\nGit takes snapshots of your files when you tell it to, these are called commits\nI saved my file from above, enter a commit message and click “Commit to master”\n\n\n\nCommits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time\n\n\n\n\n\nGit knows the state of your files at every commit\n\nYou can easily restore your files to a previous state\n\nFor Git the state of your files only changes when their contents change\n\nIf you reopen a file, make no changes, then close it, Git will show no changes in your repo\nIf you add an empty folder/directory to your repo Git will show no changes in your repo\nThis differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems\n\nI recommend not to place your Git repos in a location that is sync’d by either OneDrive or Google Drive",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Intro to Git</span>"
+    ]
   },
   {
     "objectID": "01-01-intro-git.html#the-.git-folder",
     "href": "01-01-intro-git.html#the-.git-folder",
     "title": "1  Intro to Git",
     "section": "1.2 The .git folder",
-    "text": "1.2 The .git folder\n\nWhen you initialise a directory the .git folder is created\nThis contains all of the files Git uses to track the contents of your files\nHere is the .git folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)\n\n\n\n\n\n\n\n\n\nGitHub (and Git servers in general) store repositories as bare repositories. This means that they only contain the .git directory which is on your local machine. Hence perhaps a little confusingly when you view your repository on GitHub you cannot see the .git directory listed in the repo contents (as you see in a File Explorer on your local machine).\n\n\n\n\n\n\n\n\n\nHere are its contents - don’t edit these manually\n\n\n\n\n\n\n\n\n\nExplanation of these is (from here)"
+    "text": "1.2 The .git folder\n\nWhen you initialise a directory the .git folder is created\nThis contains all of the files Git uses to track the contents of your files\nHere is the .git folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)\n\n\n\n\n\n\n\n\n\nGitHub (and Git servers in general) store repositories as bare repositories. This means that they only contain the .git directory which is on your local machine. Hence perhaps a little confusingly when you view your repository on GitHub you cannot see the .git directory listed in the repo contents (as you see in a File Explorer on your local machine).\n\n\n\n\n\n\n\n\n\nHere are its contents - don’t edit these manually\n\n\n\n\n\n\n\n\n\nExplanation of these is (from here)",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Intro to Git</span>"
+    ]
   },
   {
     "objectID": "01-01-intro-git.html#common-git-commands",
     "href": "01-01-intro-git.html#common-git-commands",
     "title": "1  Intro to Git",
     "section": "1.3 Common Git commands",
-    "text": "1.3 Common Git commands\n\nI recommend you use GitHub Desktop instead of these commands\nThese commands are what GitHub Desktop is using behind the scenes\nGit is the name of the program, git is the name of the executable available at your command line\ngit init \ngit add &lt;filename&gt;\ngit status\ngit commit -m \"Your commit message\"\ngit commit --amend -m \"Your amended commit message\"\ngit push \ngit pull \ngit clone\ngit branch\ngit checkout\ngit merge\ngit fetch \nIf you use one of these commands and receive an error message including the text below, it can mean that you have made a typo in the filename you included in your Git command\nfatal: not under version control"
+    "text": "1.3 Common Git commands\n\nI recommend you use GitHub Desktop instead of these commands\nThese commands are what GitHub Desktop is using behind the scenes\nGit is the name of the program, git is the name of the executable available at your command line\ngit init \ngit add &lt;filename&gt;\ngit status\ngit commit -m \"Your commit message\"\ngit commit --amend -m \"Your amended commit message\"\ngit push \ngit pull \ngit clone\ngit branch\ngit checkout\ngit merge\ngit fetch \nIf you use one of these commands and receive an error message including the text below, it can mean that you have made a typo in the filename you included in your Git command\nfatal: not under version control",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Intro to Git</span>"
+    ]
+  },
+  {
+    "objectID": "01-02-installing-git.html",
+    "href": "01-02-installing-git.html",
+    "title": "2  Installing Git and GitHub Desktop",
+    "section": "",
+    "text": "2.1 Installing Git\n(It turns out that GitHub Desktop has a version of Git within it. If you only ever intend to use Git through GitHub Desktop you don’t need to install Git and can skip to the GitHub Desktop section.)",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing Git and GitHub Desktop</span>"
+    ]
   },
   {
     "objectID": "01-02-installing-git.html#installing-git",
     "href": "01-02-installing-git.html#installing-git",
     "title": "2  Installing Git and GitHub Desktop",
-    "section": "2.1 Installing Git",
-    "text": "2.1 Installing Git\n(It turns out that GitHub Desktop has a version of Git within it. If you only ever intend to use Git through GitHub Desktop you don’t need to install Git and can skip to the GitHub Desktop section.)\n\nWindows\n\nDownload and install from here\n\nmacOS comes with an out-dated version of Git\n\nI recommend installing the Homebrew version\nFirst install Homebrew, see instructions here\nThen run in your Terminal app\nbrew upgrade\nbrew install git\nAdditionally on a Mac it is helpful to install Xcode command line tools (i.e., avoid installing the whole of Xcode.)\nxcode-select --install\n\nYou must reinstall these tools everytime you upgrade macOS major versions, e.g., when you’ve upgraded from Big Sur to Monterey etc.\n\n\nOnce Git is installed its executable (called git on macOS and Linux and git.exe on Windows) should be available at your command line\n\nCheck which version you have with (you want something recent-ish)\ngit --version\nOn my Mac currently I have\ngit version 2.39.1"
+    "section": "",
+    "text": "Windows\n\nDownload and install from here\n\nmacOS comes with an out-dated version of Git\n\nI recommend installing the Homebrew version\nFirst install Homebrew, see instructions here\nThen run in your Terminal app\nbrew upgrade\nbrew install git\nAdditionally on a Mac it is helpful to install Xcode command line tools (i.e., avoid installing the whole of Xcode.)\nxcode-select --install\n\nYou must reinstall these tools everytime you upgrade macOS major versions, e.g., when you’ve upgraded from Big Sur to Monterey etc.\n\n\nOnce Git is installed its executable (called git on macOS and Linux and git.exe on Windows) should be available at your command line\n\nCheck which version you have with (you want something recent-ish)\ngit --version\nOn my Mac currently I have\ngit version 2.39.1",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing Git and GitHub Desktop</span>"
+    ]
   },
   {
     "objectID": "01-02-installing-git.html#installing-github-desktop",
     "href": "01-02-installing-git.html#installing-github-desktop",
     "title": "2  Installing Git and GitHub Desktop",
     "section": "2.2 Installing GitHub Desktop",
-    "text": "2.2 Installing GitHub Desktop\n\nYou could use Git through its command syntax however I recommend you use a graphical Git client\nFor Windows and macOS download and install GitHub Desktop from here\nA Linux version of GitHub Desktop is available from here\nI recommend installing the free VSCode text editor, from here, and setting that as the “External editor” in GitHub Desktop options (Click: File | Options…)\n\n\n\n\n\n\n\n\n\nOn Windows I also recommend installing Windows Terminal from here"
+    "text": "2.2 Installing GitHub Desktop\n\nYou could use Git through its command syntax however I recommend you use a graphical Git client\nFor Windows and macOS download and install GitHub Desktop from here\nA Linux version of GitHub Desktop is available from here\nI recommend installing the free VSCode text editor, from here, and setting that as the “External editor” in GitHub Desktop options (Click: File | Options…)\n\n\n\n\n\n\n\n\n\nOn Windows I also recommend installing Windows Terminal from here",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing Git and GitHub Desktop</span>"
+    ]
+  },
+  {
+    "objectID": "01-03-intro-github.html",
+    "href": "01-03-intro-github.html",
+    "title": "3  Intro to GitHub",
+    "section": "",
+    "text": "3.1 GitHub PAT for R",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intro to GitHub</span>"
+    ]
   },
   {
     "objectID": "01-03-intro-github.html#github-pat-for-r",
     "href": "01-03-intro-github.html#github-pat-for-r",
     "title": "3  Intro to GitHub",
-    "section": "3.1 GitHub PAT for R",
-    "text": "3.1 GitHub PAT for R\n\nTo create a GitHub Personal Access Token (PAT) to be allowed more downloads from GitHub per hour run in R\n\ninstall.packages(\"usethis\")\nlibrary(usethis)\ncreate_github_token()"
+    "section": "",
+    "text": "To create a GitHub Personal Access Token (PAT) to be allowed more downloads from GitHub per hour run in R\n\ninstall.packages(\"usethis\")\nlibrary(usethis)\ncreate_github_token()",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intro to GitHub</span>"
+    ]
   },
   {
     "objectID": "01-03-intro-github.html#github-cli",
     "href": "01-03-intro-github.html#github-cli",
     "title": "3  Intro to GitHub",
     "section": "3.2 GitHub CLI",
-    "text": "3.2 GitHub CLI\n\nGitHub CLI stands for command line interface for operating GitHub\nInstallation instructions are here\nBut I don’t recommend using this"
+    "text": "3.2 GitHub CLI\n\nGitHub CLI stands for command line interface for operating GitHub\nInstallation instructions are here\nBut I don’t recommend using this",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intro to GitHub</span>"
+    ]
+  },
+  {
+    "objectID": "01-04-git-and-github-workflow.html",
+    "href": "01-04-git-and-github-workflow.html",
+    "title": "4  Git and GitHub Workflow",
+    "section": "",
+    "text": "4.1 Standard GitHub workflow",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Git and GitHub Workflow</span>"
+    ]
   },
   {
     "objectID": "01-04-git-and-github-workflow.html#standard-github-workflow",
     "href": "01-04-git-and-github-workflow.html#standard-github-workflow",
     "title": "4  Git and GitHub Workflow",
-    "section": "4.1 Standard GitHub workflow",
-    "text": "4.1 Standard GitHub workflow\n\n(I recommend to only fork a public repo if you intend to send a pull request to it)\nFork the other person’s repo (this will be known as the upstream repo from your fork, your copy of a repo on GitHub is known as origin)\nThis creates a copy of their repo under your account (your fork)\nClone your fork (the copy under your account) to your machine\nCreate a new branch (do not work on master/main)\nMake your changes and commit them\nPush your new branch upto your GitHub (i.e., to your fork)\nCreate a pull request (from your new branch) back to the default (master/main) branch of the original repo"
+    "section": "",
+    "text": "(I recommend to only fork a public repo if you intend to send a pull request to it)\nFork the other person’s repo (this will be known as the upstream repo from your fork, your copy of a repo on GitHub is known as origin)\nThis creates a copy of their repo under your account (your fork)\nClone your fork (the copy under your account) to your machine\nCreate a new branch (do not work on master/main)\nMake your changes and commit them\nPush your new branch upto your GitHub (i.e., to your fork)\nCreate a pull request (from your new branch) back to the default (master/main) branch of the original repo",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Git and GitHub Workflow</span>"
+    ]
   },
   {
     "objectID": "01-04-git-and-github-workflow.html#workflow-with-an-opensafely-github-repo",
     "href": "01-04-git-and-github-workflow.html#workflow-with-an-opensafely-github-repo",
     "title": "4  Git and GitHub Workflow",
     "section": "4.2 Workflow with an OpenSAFELY GitHub repo",
-    "text": "4.2 Workflow with an OpenSAFELY GitHub repo\n\nSkip the forking step from the standard GitHub workflow\nThe repo on GitHub is known as origin\nClone the repo to your local machine\n\nClick: Code | Open with GitHub Desktop\n\n\n\n\n\n\n\n\n\nClick Clone in the box which appears in GitHub Desktop\n\n\n\n\n\n\n\n\n\nGo to the Making a pull request page here"
+    "text": "4.2 Workflow with an OpenSAFELY GitHub repo\n\nSkip the forking step from the standard GitHub workflow\nThe repo on GitHub is known as origin\nClone the repo to your local machine\n\nClick: Code | Open with GitHub Desktop\n\n\n\n\n\n\n\n\n\nClick Clone in the box which appears in GitHub Desktop\n\n\n\n\n\n\n\n\n\nGo to the Making a pull request page here",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Git and GitHub Workflow</span>"
+    ]
+  },
+  {
+    "objectID": "01-05-making-pull-request.html",
+    "href": "01-05-making-pull-request.html",
+    "title": "5  Making a pull request",
+    "section": "",
+    "text": "5.1 Making a pull request",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Making a pull request</span>"
+    ]
   },
   {
     "objectID": "01-05-making-pull-request.html#making-a-pull-request",
     "href": "01-05-making-pull-request.html#making-a-pull-request",
     "title": "5  Making a pull request",
-    "section": "5.1 Making a pull request",
-    "text": "5.1 Making a pull request\n\nLet’s start by creating a new branch\n\n\n\n\n\n\n\n\n\nWe do some work (in VSCode/text editor/RStudio) which creates a markdown file with a title and some text. We then make a new commit which adds this new file to the repo\n\n\n\n\n\n\n\n\n\nNext publish the new branch to GitHub\n\n\n\n\n\n\n\n\n\nNow initiate the creation of the PR by either clicking in GitHub Desktop “Create Pull Request”\n\n\n\n\n\n\n\n\n\nor clicking on the button on the repo webpage “Compare & pull request”\n\n\n\n\n\n\n\n\n\nEdit the title box, add some extra text in the comment box, select a reviewer, and then click “Create pull request”\n\n\n\n\n\n\n\n\n\nYou can amend/edit pull requests by modifying/adding commits to the branch from which you sent the PR\nSee more about pull request reviews here\n(The reviewer) will then merge your PR\n\n\n\n\n\n\n\n\n\n(The reviewer) will then confirm the merge\n\n\n\n\n\n\n\n\n\n(Optional) Delete the branch the PR came from\n\n\n\n\n\n\n\n\n\nThe PR is now finished and we can see the merge commit in the default (main/master) branch\n\n\n\n\n\n\n\n\n\nIn GitHub Desktop click “Fetch origin”/“Pull origin” to pull the updated main/master branch down to your local machine … and the process begins again …"
+    "section": "",
+    "text": "Let’s start by creating a new branch\n\n\n\n\n\n\n\n\n\nWe do some work (in VSCode/text editor/RStudio) which creates a markdown file with a title and some text. We then make a new commit which adds this new file to the repo\n\n\n\n\n\n\n\n\n\nNext publish the new branch to GitHub\n\n\n\n\n\n\n\n\n\nNow initiate the creation of the PR by either clicking in GitHub Desktop “Create Pull Request”\n\n\n\n\n\n\n\n\n\nor clicking on the button on the repo webpage “Compare & pull request”\n\n\n\n\n\n\n\n\n\nEdit the title box, add some extra text in the comment box, select a reviewer, and then click “Create pull request”\n\n\n\n\n\n\n\n\n\nYou can amend/edit pull requests by modifying/adding commits to the branch from which you sent the PR\nSee more about pull request reviews here\n(The reviewer) will then merge your PR\n\n\n\n\n\n\n\n\n\n(The reviewer) will then confirm the merge\n\n\n\n\n\n\n\n\n\n(Optional) Delete the branch the PR came from\n\n\n\n\n\n\n\n\n\nThe PR is now finished and we can see the merge commit in the default (main/master) branch\n\n\n\n\n\n\n\n\n\nIn GitHub Desktop click “Fetch origin”/“Pull origin” to pull the updated main/master branch down to your local machine … and the process begins again …",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Making a pull request</span>"
+    ]
+  },
+  {
+    "objectID": "01-06-merging-branch-locally.html",
+    "href": "01-06-merging-branch-locally.html",
+    "title": "6  Merging a branch locally",
+    "section": "",
+    "text": "6.1 Merging a branch locally",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Merging a branch locally</span>"
+    ]
   },
   {
     "objectID": "01-06-merging-branch-locally.html#merging-a-branch-locally",
     "href": "01-06-merging-branch-locally.html#merging-a-branch-locally",
     "title": "6  Merging a branch locally",
-    "section": "6.1 Merging a branch locally",
-    "text": "6.1 Merging a branch locally\n\nA PR is essentially doing a merge on GitHub, you can merge branches locally as well\nSay we created a new branch edit-readme and made a commit on it\nTo merge edit-readme into main switch to main\n\n\n\n\n\n\n\n\n\nSelect edit-readme and click “Create a merge commit”\n\n\n\n\n\n\n\n\n\nThen push the new commits onto main upto GitHub (when appropriate)\n\n\n\n\n\n\n\n\n\nThen you can delete the edit-readme branch\n\n\n\n\n\n\n\n\n\nConfirm the deletion"
+    "section": "",
+    "text": "A PR is essentially doing a merge on GitHub, you can merge branches locally as well\nSay we created a new branch edit-readme and made a commit on it\nTo merge edit-readme into main switch to main\n\n\n\n\n\n\n\n\n\nSelect edit-readme and click “Create a merge commit”\n\n\n\n\n\n\n\n\n\nThen push the new commits onto main upto GitHub (when appropriate)\n\n\n\n\n\n\n\n\n\nThen you can delete the edit-readme branch\n\n\n\n\n\n\n\n\n\nConfirm the deletion",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Merging a branch locally</span>"
+    ]
+  },
+  {
+    "objectID": "01-07-rebasing-branch.html",
+    "href": "01-07-rebasing-branch.html",
+    "title": "7  Rebasing a branch",
+    "section": "",
+    "text": "7.1 Rebasing a branch",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Rebasing a branch</span>"
+    ]
   },
   {
     "objectID": "01-07-rebasing-branch.html#rebasing-a-branch",
     "href": "01-07-rebasing-branch.html#rebasing-a-branch",
     "title": "7  Rebasing a branch",
-    "section": "7.1 Rebasing a branch",
-    "text": "7.1 Rebasing a branch\n\nPerforming a rebase puts the commits you have on your branch on top of the commits from another branch\nWe commonly do this when our colleagues have merged PRs into say the main branch\nWe would then rebase our branch on top of main\nA rebase can be performed in GitHub Desktop as follows\n\nIn these screenshots we assume we started working on branch-1\nWe then made branch-2 from branch-1 and made some commits on it\nWe then went back to branch-1 and made some different commits\nWe now need to rebase the commits on branch-2 to be on top of branch-1\nStarting on branch-2, select Branch | Rebase current branch…\n\n\n\n\n\n\n\n\n\nOr/then from the middle panel select the branch to rebase on top of - select branch-1 (or select main if you are rebasing on top of main) and click Rebase\n\n\n\n\n\n\n\n\n\nHopefully the rebase will be successful, if there are merge conflicts you will need to resolve those"
+    "section": "",
+    "text": "Performing a rebase puts the commits you have on your branch on top of the commits from another branch\nWe commonly do this when our colleagues have merged PRs into say the main branch\nWe would then rebase our branch on top of main\nA rebase can be performed in GitHub Desktop as follows\n\nIn these screenshots we assume we started working on branch-1\nWe then made branch-2 from branch-1 and made some commits on it\nWe then went back to branch-1 and made some different commits\nWe now need to rebase the commits on branch-2 to be on top of branch-1\nStarting on branch-2, select Branch | Rebase current branch…\n\n\n\n\n\n\n\n\n\nOr/then from the middle panel select the branch to rebase on top of - select branch-1 (or select main if you are rebasing on top of main) and click Rebase\n\n\n\n\n\n\n\n\n\nHopefully the rebase will be successful, if there are merge conflicts you will need to resolve those",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Rebasing a branch</span>"
+    ]
+  },
+  {
+    "objectID": "01-08-common-errors.html",
+    "href": "01-08-common-errors.html",
+    "title": "8  Common errors",
+    "section": "",
+    "text": "8.1 Merge conflicts",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Common errors</span>"
+    ]
   },
   {
     "objectID": "01-08-common-errors.html#merge-conflicts",
     "href": "01-08-common-errors.html#merge-conflicts",
     "title": "8  Common errors",
-    "section": "8.1 Merge conflicts",
-    "text": "8.1 Merge conflicts\n\nThese can happen if e.g.,\n\nyou forget to pull down the latest changes from GitHub (I find it’s easy to forget to do this in the morning)\nif you’re working on a project with multiple people\n\nyou both create new branches\nthey send in their PR first and it’s merged\nthen you send in your PR which edits some of the same lines\n\n\nLet’s say I made changes yesterday which I pushed to GitHub\n\nThe next day I restart work on a different computer, GitHub Desktop will show for example\n\n\n\n\n\n\n\n\n\n\nBut you forget to click “Pull origin”\nIf you make commits onto a branch on which there are not yet pulled commits on GitHub you’ll get a merge error when you eventually click “Pull origin”\n\n\n\n\n\n\n\n\n\nYou could resolve conflict e.g., in VSCode\n\n\n\n\n\n\n\n\n\nWe can see this can happen when we see both up and down arrows in Pull origin box (but not always)\n\n\n\n\n\n\n\n\n\nFix\n\nMove your changes to a new branch\n\n\n\n\n\n\n\n\n\nMove back to master/main and revert/undo the changes there, then edit the files so they show no changes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPull down the changes from GitHub to the relevant branch\n\n\n\n\n\n\n\n\n\nMerge changes from your new branch into the main/master/relevant branch\n\nSee the GitHub documentation for more information about merge conflicts\n\nhere\nResolving a merge conflict here"
+    "section": "",
+    "text": "These can happen if e.g.,\n\nyou forget to pull down the latest changes from GitHub (I find it’s easy to forget to do this in the morning)\nif you’re working on a project with multiple people\n\nyou both create new branches\nthey send in their PR first and it’s merged\nthen you send in your PR which edits some of the same lines\n\n\nLet’s say I made changes yesterday which I pushed to GitHub\n\nThe next day I restart work on a different computer, GitHub Desktop will show for example\n\n\n\n\n\n\n\n\n\n\nBut you forget to click “Pull origin”\nIf you make commits onto a branch on which there are not yet pulled commits on GitHub you’ll get a merge error when you eventually click “Pull origin”\n\n\n\n\n\n\n\n\n\nYou could resolve conflict e.g., in VSCode\n\n\n\n\n\n\n\n\n\nWe can see this can happen when we see both up and down arrows in Pull origin box (but not always)\n\n\n\n\n\n\n\n\n\nFix\n\nMove your changes to a new branch\n\n\n\n\n\n\n\n\n\nMove back to master/main and revert/undo the changes there, then edit the files so they show no changes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPull down the changes from GitHub to the relevant branch\n\n\n\n\n\n\n\n\n\nMerge changes from your new branch into the main/master/relevant branch\n\nSee the GitHub documentation for more information about merge conflicts\n\nhere\nResolving a merge conflict here",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Common errors</span>"
+    ]
   },
   {
     "objectID": "01-08-common-errors.html#no-content-changes-found",
     "href": "01-08-common-errors.html#no-content-changes-found",
     "title": "8  Common errors",
     "section": "8.2 No content changes found",
-    "text": "8.2 No content changes found\n\nIf you see the following message from Git that a file has changed but there are No content changes found\n\n\n\n\n\n\n\n\n\nThis is most likely caused by working with colleagues using different operating systems, because they save text files with different line ending characters (CRLF on Windows, LF on macOS/Linux/Unix)\nYou can usually simply right click on the offending file in GitHub Desktop and Discard changes\n\n\n\n\n\n\n\n\n\nAdditionally you can set the following option at the top of your .gitattributes file\n# Auto detect text files and perform LF normalization\n* text=auto"
+    "text": "8.2 No content changes found\n\nIf you see the following message from Git that a file has changed but there are No content changes found\n\n\n\n\n\n\n\n\n\nThis is most likely caused by working with colleagues using different operating systems, because they save text files with different line ending characters (CRLF on Windows, LF on macOS/Linux/Unix)\nYou can usually simply right click on the offending file in GitHub Desktop and Discard changes\n\n\n\n\n\n\n\n\n\nAdditionally you can set the following option at the top of your .gitattributes file\n# Auto detect text files and perform LF normalization\n* text=auto",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Common errors</span>"
+    ]
+  },
+  {
+    "objectID": "01-09-installing-python-and-os.html",
+    "href": "01-09-installing-python-and-os.html",
+    "title": "9  Installing Python and the opensafely command line interface",
+    "section": "",
+    "text": "9.1 macOS",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Installing Python and the opensafely command line interface</span>"
+    ]
   },
   {
     "objectID": "01-09-installing-python-and-os.html#macos",
     "href": "01-09-installing-python-and-os.html#macos",
     "title": "9  Installing Python and the opensafely command line interface",
-    "section": "9.1 macOS",
-    "text": "9.1 macOS\n\nIf you have a Mac, the macOS operating system comes with an old-ish version of Python 2.7\nI recommend installing Python 3 through homebrew\nbrew install python\nWhen you open Terminal\n\nSee the contents of PATH with echo $PATH (note use ${PATH} in shell scripts)\nyou should be able to find the python/python3 exectables with the which command"
+    "section": "",
+    "text": "If you have a Mac, the macOS operating system comes with an old-ish version of Python 2.7\nI recommend installing Python 3 through homebrew\nbrew install python\nWhen you open Terminal\n\nSee the contents of PATH with echo $PATH (note use ${PATH} in shell scripts)\nyou should be able to find the python/python3 exectables with the which command",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Installing Python and the opensafely command line interface</span>"
+    ]
   },
   {
     "objectID": "01-09-installing-python-and-os.html#windows",
     "href": "01-09-installing-python-and-os.html#windows",
     "title": "9  Installing Python and the opensafely command line interface",
     "section": "9.2 Windows",
-    "text": "9.2 Windows\n\nYou have a number of choices where to install Python from\n\nMicrosoft store, .e.g. Python 3.10 from here\nPython installer from here\nAnaconda installer from here\n\nDespite not being recommend - it is better for you to add Anaconda/Python to your PATH in the installer options, i.e., check the first box on this screen\n\n\n\n\n\n\n\n\n\n\nAnd in the Python installer check the box adding Python to PATH\n\n\n\n\n\n\n\n\n\n\nOpen Windows Terminal\n\nyou can see the contents of PATH in Powershell with $Env:Path\n\n\n\n\n\n\n\n\n\nand in cmd with echo %PATH%\n\n\n\n\n\n\n\n\n\nyou can see the location of the Python executable in cmd with where python/where python3\n\n\n\n\n\n\n\n\n\n\nIf you installed Anaconda and you did not add its folders to PATH then you need to install and run opensafely using the Anaconda prompt - you find this as a program under the Start menu"
+    "text": "9.2 Windows\n\nYou have a number of choices where to install Python from\n\nMicrosoft store, .e.g. Python 3.10 from here\nPython installer from here\nAnaconda installer from here\n\nDespite not being recommend - it is better for you to add Anaconda/Python to your PATH in the installer options, i.e., check the first box on this screen\n\n\n\n\n\n\n\n\n\n\nAnd in the Python installer check the box adding Python to PATH\n\n\n\n\n\n\n\n\n\n\nOpen Windows Terminal\n\nyou can see the contents of PATH in Powershell with $Env:Path\n\n\n\n\n\n\n\n\n\nand in cmd with echo %PATH%\n\n\n\n\n\n\n\n\n\nyou can see the location of the Python executable in cmd with where python/where python3\n\n\n\n\n\n\n\n\n\n\nIf you installed Anaconda and you did not add its folders to PATH then you need to install and run opensafely using the Anaconda prompt - you find this as a program under the Start menu",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Installing Python and the opensafely command line interface</span>"
+    ]
   },
   {
     "objectID": "01-09-installing-python-and-os.html#installing-the-opensafely-package",
     "href": "01-09-installing-python-and-os.html#installing-the-opensafely-package",
     "title": "9  Installing Python and the opensafely command line interface",
     "section": "9.3 Installing the opensafely package",
-    "text": "9.3 Installing the opensafely package\n\nAs long as the python/python3 and pip/pip3 executables are now on your PATH you can simply run in your shell program\npip install opensafely   \nThis will additionally install its dependency package the cohortextractor package into your Python installation and you should now be able to run opensafely commands such as\nopensafely run run_all"
+    "text": "9.3 Installing the opensafely package\n\nAs long as the python/python3 and pip/pip3 executables are now on your PATH you can simply run in your shell program\npip install opensafely   \nThis will additionally install its dependency package the cohortextractor package into your Python installation and you should now be able to run opensafely commands such as\nopensafely run run_all",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Installing Python and the opensafely command line interface</span>"
+    ]
+  },
+  {
+    "objectID": "01-10-os-repos.html",
+    "href": "01-10-os-repos.html",
+    "title": "10  OpenSAFELY repositories",
+    "section": "",
+    "text": "10.1 Demo repo",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>OpenSAFELY repositories</span>"
+    ]
   },
   {
     "objectID": "01-10-os-repos.html#demo-repo",
     "href": "01-10-os-repos.html#demo-repo",
     "title": "10  OpenSAFELY repositories",
-    "section": "10.1 Demo repo",
-    "text": "10.1 Demo repo\n\nHave a look at the demo repo here"
+    "section": "",
+    "text": "Have a look at the demo repo here",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>OpenSAFELY repositories</span>"
+    ]
   },
   {
     "objectID": "01-10-os-repos.html#getting-started",
     "href": "01-10-os-repos.html#getting-started",
     "title": "10  OpenSAFELY repositories",
     "section": "10.2 Getting started",
-    "text": "10.2 Getting started\n\nSee OS page here\nIf creating a new repo create from the OS template here\n\n\n\n\n\n\n\n\n\nThis is already Git initialized\nImportant files\n\nproject.yaml\n\nDefines the jobs and the order in which they run\n\n/analysis/study_defintion.py\n\nDefines the study population extracted from the OpenSAFELY database\nThis should return .csv file/s of data to read into R\n\n/analysis/##_R-scripts.R\n\nYour analysis scripts (where ## is the number of your script)"
+    "text": "10.2 Getting started\n\nSee OS page here\nIf creating a new repo create from the OS template here\n\n\n\n\n\n\n\n\n\nThis is already Git initialized\nImportant files\n\nproject.yaml\n\nDefines the jobs and the order in which they run\n\n/analysis/study_defintion.py\n\nDefines the study population extracted from the OpenSAFELY database\nThis should return .csv file/s of data to read into R\n\n/analysis/##_R-scripts.R\n\nYour analysis scripts (where ## is the number of your script)",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>OpenSAFELY repositories</span>"
+    ]
   },
   {
     "objectID": "01-10-os-repos.html#running-jobs-on-the-dummy-data",
     "href": "01-10-os-repos.html#running-jobs-on-the-dummy-data",
     "title": "10  OpenSAFELY repositories",
     "section": "10.3 Running jobs (on the dummy data)",
-    "text": "10.3 Running jobs (on the dummy data)\nThere are a couple of ways to run jobs on the dummy data system.\n\nIn your OpenSAFELY repo online\n\nUse Gitpod\n\nOn your own machine, in which case please install the following free software\n\nIf on Windows - Windows Subsystem for Linux version 2, using the instructions here\nDocker Desktop, from here\nPython (described on a previous page here)\nGit (described on previous page here)\nGitHub Desktop, from here\nVSCode text editor, from here"
+    "text": "10.3 Running jobs (on the dummy data)\nThere are a couple of ways to run jobs on the dummy data system.\n\nIn your OpenSAFELY repo online\n\nUse Gitpod\n\nOn your own machine, in which case please install the following free software\n\nIf on Windows - Windows Subsystem for Linux version 2, using the instructions here\nDocker Desktop, from here\nPython (described on a previous page here)\nGit (described on previous page here)\nGitHub Desktop, from here\nVSCode text editor, from here",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>OpenSAFELY repositories</span>"
+    ]
+  },
+  {
+    "objectID": "01-11-additional-topics.html",
+    "href": "01-11-additional-topics.html",
+    "title": "11  Additional topics",
+    "section": "",
+    "text": "11.1 Avoid making commits with lots changes",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Additional topics</span>"
+    ]
   },
   {
     "objectID": "01-11-additional-topics.html#avoid-making-commits-with-lots-changes",
     "href": "01-11-additional-topics.html#avoid-making-commits-with-lots-changes",
     "title": "11  Additional topics",
-    "section": "11.1 Avoid making commits with lots changes",
-    "text": "11.1 Avoid making commits with lots changes\n\nDo not commit changes to many files with a single commit message such as “Edits”!\n\n\n\n\n\n\n\n\n\nNote that in a commit we can see the added lines - green highlight with + prefix - and deleted lines - red highligh with - prefix"
+    "section": "",
+    "text": "Do not commit changes to many files with a single commit message such as “Edits”!\n\n\n\n\n\n\n\n\n\nNote that in a commit we can see the added lines - green highlight with + prefix - and deleted lines - red highligh with - prefix",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Additional topics</span>"
+    ]
   },
   {
     "objectID": "01-11-additional-topics.html#writing-good-commit-messages",
     "href": "01-11-additional-topics.html#writing-good-commit-messages",
     "title": "11  Additional topics",
     "section": "11.2 Writing good commit messages",
-    "text": "11.2 Writing good commit messages\n\nFollow the standard recommendations about making commit messages, see\n\nhere and\nhere"
+    "text": "11.2 Writing good commit messages\n\nFollow the standard recommendations about making commit messages, see\n\nhere and\nhere",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Additional topics</span>"
+    ]
   },
   {
     "objectID": "01-11-additional-topics.html#files-for-git-to-ignore",
     "href": "01-11-additional-topics.html#files-for-git-to-ignore",
     "title": "11  Additional topics",
     "section": "11.3 Files for Git to ignore",
-    "text": "11.3 Files for Git to ignore\n\nYou should not commit all files in the folder on your computer into your repo\nThe .gitignore file is a list of files and folders in your repo for Git to ignore\nCommon files to ignore are\n\n.Rhistory\n.DS_Store\nif using an RStudio project ignore the .Rproj.user directory with syntax .Rproj.user/\n\nIt is helpful to setup a global .gitignore file to ignore certain operating system files from all of your repositories, e.g., .DS_Store on macOS or Thumbs.db on Windows. To do this on macOS, following the example here, we could run the following commands in a shell\necho \".DS_Store\" &gt; ~/.gitignore_global\ngit config --global core.excludesfile ~/.gitignore_global"
+    "text": "11.3 Files for Git to ignore\n\nYou should not commit all files in the folder on your computer into your repo\nThe .gitignore file is a list of files and folders in your repo for Git to ignore\nCommon files to ignore are\n\n.Rhistory\n.DS_Store\nif using an RStudio project ignore the .Rproj.user directory with syntax .Rproj.user/\n\nIt is helpful to setup a global .gitignore file to ignore certain operating system files from all of your repositories, e.g., .DS_Store on macOS or Thumbs.db on Windows. To do this on macOS, following the example here, we could run the following commands in a shell\necho \".DS_Store\" &gt; ~/.gitignore_global\ngit config --global core.excludesfile ~/.gitignore_global",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Additional topics</span>"
+    ]
   },
   {
     "objectID": "01-11-additional-topics.html#github-repos-contain-more-than-just-code",
     "href": "01-11-additional-topics.html#github-repos-contain-more-than-just-code",
     "title": "11  Additional topics",
     "section": "11.4 GitHub repos contain more than just code",
-    "text": "11.4 GitHub repos contain more than just code\n\nA repo for an R package will probably contain\n\nThe code for the R package\nThe code for its website (often made with pkgdown and hosted with GitHub Pages or Netlify)\n\n\n\n\n\n\n\n\n\nScripts for controlling continuous integration services such as GitHub Actions"
+    "text": "11.4 GitHub repos contain more than just code\n\nA repo for an R package will probably contain\n\nThe code for the R package\nThe code for its website (often made with pkgdown and hosted with GitHub Pages or Netlify)\n\n\n\n\n\n\n\n\n\nScripts for controlling continuous integration services such as GitHub Actions",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Additional topics</span>"
+    ]
+  },
+  {
+    "objectID": "01-12-short-practical.html",
+    "href": "01-12-short-practical.html",
+    "title": "12  Short practical",
+    "section": "",
+    "text": "12.1 Short practical",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Short practical</span>"
+    ]
   },
   {
     "objectID": "01-12-short-practical.html#short-practical",
     "href": "01-12-short-practical.html#short-practical",
     "title": "12  Short practical",
-    "section": "12.1 Short practical",
-    "text": "12.1 Short practical\n\nOn GitHub:\n\nGo to our test repo (in our test organization) here\n\n\n\n\n\n\n\n\n\nClone the repo to your local machine\n\nIn GitHub Desktop: make a new branch and switch to it\nIn any text editor:\n\nCreate a new markdown file called yourfirstname-yourlastname.md\nAdd a sentence or two to the file about yourself, e.g.,\n\n\n\n\n\n\n\n\n\nSave this file into the (top level of the) repo\n\nIn GitHub Desktop: Commit this new file into your new branch\nIn GitHub Desktop: Push your new branch upto GitHub\nOn GitHub: Open a pull request from your branch to the main branch in which you select a reviewer (Tom/Venexia/Marwa)\nIn your text editor and GitHub Desktop: Make any changes requested by the reviewer and add these to your PR - hopefully your pull request will then be merged by the reviewer!\nOn GitHub: Delete the branch you made your pull request from\nIn GitHub Desktop: Pull down the updated master branch to your machine … in a real workflow you would then make another new branch and do more work…"
+    "section": "",
+    "text": "On GitHub:\n\nGo to our test repo (in our test organization) here\n\n\n\n\n\n\n\n\n\nClone the repo to your local machine\n\nIn GitHub Desktop: make a new branch and switch to it\nIn any text editor:\n\nCreate a new markdown file called yourfirstname-yourlastname.md\nAdd a sentence or two to the file about yourself, e.g.,\n\n\n\n\n\n\n\n\n\nSave this file into the (top level of the) repo\n\nIn GitHub Desktop: Commit this new file into your new branch\nIn GitHub Desktop: Push your new branch upto GitHub\nOn GitHub: Open a pull request from your branch to the main branch in which you select a reviewer (Tom/Venexia/Marwa)\nIn your text editor and GitHub Desktop: Make any changes requested by the reviewer and add these to your PR - hopefully your pull request will then be merged by the reviewer!\nOn GitHub: Delete the branch you made your pull request from\nIn GitHub Desktop: Pull down the updated master branch to your machine … in a real workflow you would then make another new branch and do more work…",
+    "crumbs": [
+      "Introduction to using Git and GitHub",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Short practical</span>"
+    ]
   },
   {
-    "objectID": "02-index.html#introduction",
-    "href": "02-index.html#introduction",
+    "objectID": "02-index.html",
+    "href": "02-index.html",
     "title": "grpEHR best practice in the OpenSAFELY system",
-    "section": "Introduction",
-    "text": "Introduction\nThe following is intended as a set of tips for users of the OpenSAFELY system at the University of Bristol.\nPlease use the menu to the left to read the different sections."
+    "section": "",
+    "text": "Introduction\nThe following is intended as a set of tips for users of the OpenSAFELY system at the University of Bristol.\nPlease use the menu to the left to read the different sections.",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system"
+    ]
+  },
+  {
+    "objectID": "02-01-study-definition.html",
+    "href": "02-01-study-definition.html",
+    "title": "13  Study definition",
+    "section": "",
+    "text": "13.1 Reproducibile dummy data",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Study definition</span>"
+    ]
   },
   {
     "objectID": "02-01-study-definition.html#reproducibile-dummy-data",
     "href": "02-01-study-definition.html#reproducibile-dummy-data",
     "title": "13  Study definition",
-    "section": "13.1 Reproducibile dummy data",
-    "text": "13.1 Reproducibile dummy data\n\nTo ensure the dummy data system generates exactly the same data every time you run it, set a random number generator seed at the top of the study_definition.py file\nimport numpy as np\n# Change this number to one for which your scripts \n# successfully run on the dummy data\nnp.random.seed(123456)"
+    "section": "",
+    "text": "To ensure the dummy data system generates exactly the same data every time you run it, set a random number generator seed at the top of the study_definition.py file\nimport numpy as np\n# Change this number to one for which your scripts \n# successfully run on the dummy data\nnp.random.seed(123456)",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Study definition</span>"
+    ]
   },
   {
     "objectID": "02-01-study-definition.html#file-formats",
     "href": "02-01-study-definition.html#file-formats",
     "title": "13  Study definition",
     "section": "13.2 File formats",
-    "text": "13.2 File formats\n\nUse .feather files for outputs from the cohortextractor, so specify an action in your project.yaml as follows\ngenerate_study_population:\n  run: cohortextractor:latest generate_cohort --study-definition study_definition --output-format feather\n needs: \n  - design\n  outputs:\n    highly_sensitive:\n      cohort: output/input.feather\nUse the arrow package to read .feather files into R\narrow::read_feather(file = file.path(\"output\", \"input.feather\"))\n\nThe col_select argument can be used to read in just the columns you need\n\nStart each project with a preprocessing action that formats .feather files and outputs (gzipped) .rds files which can be saved with readr::write_rds()\nreadr::write_rds(object, \n                 file.path(\"output\", \"mydata.rds\"), \n                 compress = \"gz\")"
+    "text": "13.2 File formats\n\nUse .feather files for outputs from the cohortextractor, so specify an action in your project.yaml as follows\ngenerate_study_population:\n  run: cohortextractor:latest generate_cohort --study-definition study_definition --output-format feather\n needs: \n  - design\n  outputs:\n    highly_sensitive:\n      cohort: output/input.feather\nUse the arrow package to read .feather files into R\narrow::read_feather(file = file.path(\"output\", \"input.feather\"))\n\nThe col_select argument can be used to read in just the columns you need\n\nStart each project with a preprocessing action that formats .feather files and outputs (gzipped) .rds files which can be saved with readr::write_rds()\nreadr::write_rds(object, \n                 file.path(\"output\", \"mydata.rds\"), \n                 compress = \"gz\")",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Study definition</span>"
+    ]
+  },
+  {
+    "objectID": "02-02-r-code.html",
+    "href": "02-02-r-code.html",
+    "title": "14  R code",
+    "section": "",
+    "text": "14.1 File formats",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>R code</span>"
+    ]
   },
   {
     "objectID": "02-02-r-code.html#file-formats",
     "href": "02-02-r-code.html#file-formats",
     "title": "14  R code",
-    "section": "14.1 File formats",
-    "text": "14.1 File formats\n\nAs per the study definition best practice, outputs from the cohortextractor should be provided as .rds files\nUse the readr package to read and write .rds files\nobject &lt;- readr::read_rds(file.path(\"output\", \"mydata.rds\"))\nreadr::write_rds(object, \n                 file.path(\"output\", \"mydata.rds\"),\n                 compress = \"gz\")\n\n\n\nAll .rds files should all be classified as highly_sensitive in actions, as they cannot be opened on the results server and therefore cannot be reviewed or released.\nreadr::write_rds() does not compress files by default. It is recommended that you compress .rds files using the argument compress = \"gz\".\nUse file.path() to construct file paths that are reproducible across operating systems."
+    "section": "",
+    "text": "As per the study definition best practice, outputs from the cohortextractor should be provided as .rds files\nUse the readr package to read and write .rds files\nobject &lt;- readr::read_rds(file.path(\"output\", \"mydata.rds\"))\nreadr::write_rds(object, \n                 file.path(\"output\", \"mydata.rds\"),\n                 compress = \"gz\")\n\n\n\nAll .rds files should all be classified as highly_sensitive in actions, as they cannot be opened on the results server and therefore cannot be reviewed or released.\nreadr::write_rds() does not compress files by default. It is recommended that you compress .rds files using the argument compress = \"gz\".\nUse file.path() to construct file paths that are reproducible across operating systems.",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>R code</span>"
+    ]
   },
   {
     "objectID": "02-02-r-code.html#supported-packages",
     "href": "02-02-r-code.html#supported-packages",
     "title": "14  R code",
     "section": "14.2 Supported packages",
-    "text": "14.2 Supported packages\n\nThe R packages (and their version number) which are installed in the OpenSAFELY R Docker container are listed here\nTo request a new package, which should be on CRAN, open a new issue here, including the link to its CRAN webpage"
+    "text": "14.2 Supported packages\n\nThe R packages (and their version number) which are installed in the OpenSAFELY R Docker container are listed here\nTo request a new package, which should be on CRAN, open a new issue here, including the link to its CRAN webpage",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>R code</span>"
+    ]
   },
   {
     "objectID": "02-02-r-code.html#rstudio-project",
     "href": "02-02-r-code.html#rstudio-project",
     "title": "14  R code",
     "section": "14.3 RStudio project",
-    "text": "14.3 RStudio project\n\nDefine your repo as an RStudio project in RStudio as follows\n\nFile | New Project…\n\n\n\n\n\n\n\n\n\nExisting Directory\n\n\n\n\n\n\n\n\n\nThen find your repo\nThis will create a .Rproj file at the top level of your repo\nCommit the file into your repo\nNow you can double click the .Rproj file to open the repo in RStudio, so you can work on your R scripts more conveniently"
+    "text": "14.3 RStudio project\n\nDefine your repo as an RStudio project in RStudio as follows\n\nFile | New Project…\n\n\n\n\n\n\n\n\n\nExisting Directory\n\n\n\n\n\n\n\n\n\nThen find your repo\nThis will create a .Rproj file at the top level of your repo\nCommit the file into your repo\nNow you can double click the .Rproj file to open the repo in RStudio, so you can work on your R scripts more conveniently",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>R code</span>"
+    ]
+  },
+  {
+    "objectID": "02-03-outputs.html",
+    "href": "02-03-outputs.html",
+    "title": "15  Outputs for release",
+    "section": "",
+    "text": "15.1 Tables",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Outputs for release</span>"
+    ]
   },
   {
     "objectID": "02-03-outputs.html#tables",
     "href": "02-03-outputs.html#tables",
     "title": "15  Outputs for release",
-    "section": "15.1 Tables",
-    "text": "15.1 Tables\n\nUse readr::write_csv() to save .csv files that will be sent to output checkers.\nreadr::write_csv(object, \n                 path = file.path(\"output\", \"mydata.csv\"))\n(Note that in more recent versions of the readr package the path argument has been renamed to file. And that large highly sensitive datasets should be saved as a compressed csv file, i.e., in .csv.gz format.)\nDo not save outputs to subdirectories of the output folder, otherwise running the study definition on GitHub Actions will probably fail with an error message such as\n\n\n\n\n\n\n\n\n\n\nError in file(file, ifelse(append, \"a\", \"w\")) : \n   cannot open the connection\n Calls: write.csv -&gt; eval.parent -&gt; eval -&gt; eval -&gt; write.table -&gt; file\n In addition: Warning message:\n In file(file, ifelse(append, \"a\", \"w\")) :\n   cannot open file '/workspace/output/descriptive/tables/table1.csv': No such file or directory\n Backtrace:\n 1: file(file, ifelse(append, \"a\", \"w\"))\n 2: write.table(table1_all$table_body, here::here(\"output\", \"descriptive\", \n 3: eval(expr, p)\n 4: eval(expr, p)\n 5: eval.parent(Call)\n 6: write.csv(table1_all$table_body, here::here(\"output\", \"descriptive\",\n\nError: Process completed with exit code 1."
+    "section": "",
+    "text": "Use readr::write_csv() to save .csv files that will be sent to output checkers.\nreadr::write_csv(object, \n                 path = file.path(\"output\", \"mydata.csv\"))\n(Note that in more recent versions of the readr package the path argument has been renamed to file. And that large highly sensitive datasets should be saved as a compressed csv file, i.e., in .csv.gz format.)\nDo not save outputs to subdirectories of the output folder, otherwise running the study definition on GitHub Actions will probably fail with an error message such as\n\n\n\n\n\n\n\n\n\n\nError in file(file, ifelse(append, \"a\", \"w\")) : \n   cannot open the connection\n Calls: write.csv -&gt; eval.parent -&gt; eval -&gt; eval -&gt; write.table -&gt; file\n In addition: Warning message:\n In file(file, ifelse(append, \"a\", \"w\")) :\n   cannot open file '/workspace/output/descriptive/tables/table1.csv': No such file or directory\n Backtrace:\n 1: file(file, ifelse(append, \"a\", \"w\"))\n 2: write.table(table1_all$table_body, here::here(\"output\", \"descriptive\", \n 3: eval(expr, p)\n 4: eval(expr, p)\n 5: eval.parent(Call)\n 6: write.csv(table1_all$table_body, here::here(\"output\", \"descriptive\",\n\nError: Process completed with exit code 1.",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Outputs for release</span>"
+    ]
   },
   {
     "objectID": "02-03-outputs.html#figures",
     "href": "02-03-outputs.html#figures",
     "title": "15  Outputs for release",
     "section": "15.2 Figures",
-    "text": "15.2 Figures\n\nUse .svg for figure outputs that will be sent to output checkers\nWhere applicable (e.g., histograms), start the x-axis at 5 instead of 0 to ensure low counts are not exported"
+    "text": "15.2 Figures\n\nUse .svg for figure outputs that will be sent to output checkers\nWhere applicable (e.g., histograms), start the x-axis at 5 instead of 0 to ensure low counts are not exported",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Outputs for release</span>"
+    ]
   },
   {
     "objectID": "02-03-outputs.html#releasing-output",
     "href": "02-03-outputs.html#releasing-output",
     "title": "15  Outputs for release",
     "section": "15.3 Releasing output",
-    "text": "15.3 Releasing output\n\nEnsure your outputs are in the correct formats\n\n.csv (not .rds or .Rdata) for tables of data\n.txt or .html if you want to view them in L4\n\nEnsure your outputs are marked as moderately_sensitive in your project.yaml\nTo release an output, please complete the ‘Output files for review’ section of this form and email to your assigned Bristol L4 access person\nBristol L4 access people will check the output on the server on your behalf, complete the rest of the form (including files locations), and email to datarelease@opensafely.org for final approval"
+    "text": "15.3 Releasing output\n\nEnsure your outputs are in the correct formats\n\n.csv (not .rds or .Rdata) for tables of data\n.txt or .html if you want to view them in L4\n\nEnsure your outputs are marked as moderately_sensitive in your project.yaml\nTo release an output, please complete the ‘Output files for review’ section of this form and email to your assigned Bristol L4 access person\nBristol L4 access people will check the output on the server on your behalf, complete the rest of the form (including files locations), and email to datarelease@opensafely.org for final approval",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Outputs for release</span>"
+    ]
+  },
+  {
+    "objectID": "02-04-misc.html",
+    "href": "02-04-misc.html",
+    "title": "16  Miscellaneous",
+    "section": "",
+    "text": "16.1 Text files",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Miscellaneous</span>"
+    ]
   },
   {
     "objectID": "02-04-misc.html#text-files",
     "href": "02-04-misc.html#text-files",
     "title": "16  Miscellaneous",
-    "section": "16.1 Text files",
-    "text": "16.1 Text files\n\nText files should end with a newline character (i.e., a blank line)\n\nIf you see the following red icon at the end of a file on GitHub, simply press ↵ Enter at the end of the file (i.e., in this case after the word Catalog), resave, commit, and the red icon should be gone"
+    "section": "",
+    "text": "Text files should end with a newline character (i.e., a blank line)\n\nIf you see the following red icon at the end of a file on GitHub, simply press ↵ Enter at the end of the file (i.e., in this case after the word Catalog), resave, commit, and the red icon should be gone",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Miscellaneous</span>"
+    ]
   },
   {
     "objectID": "02-04-misc.html#python-and-r-versions",
     "href": "02-04-misc.html#python-and-r-versions",
     "title": "16  Miscellaneous",
     "section": "16.2 Python and R versions",
-    "text": "16.2 Python and R versions\n\nThe versions of Python and R in their respective OpenSAFELY Docker containers are (as of 15th February 2023):\n\nPython 3.8.10\nR 4.0.5 (was R 4.0.2 upto and including 15/02/2023)\n\nThe Python and R code run within their respective Docker containers. Hence the version of Python and R used to run your analyses are the versions of Python and R in these Docker containers and not the versions of Python and R on your computer\nTo see the Python version number insert in your study_definition.py\nimport sys\nprint(sys.implementation.version)\nTo see the R version number insert into one of your R analysis scripts\nprint(R.version.string)"
+    "text": "16.2 Python and R versions\n\nThe versions of Python and R in their respective OpenSAFELY Docker containers are (as of 15th February 2023):\n\nPython 3.8.10\nR 4.0.5 (was R 4.0.2 upto and including 15/02/2023)\n\nThe Python and R code run within their respective Docker containers. Hence the version of Python and R used to run your analyses are the versions of Python and R in these Docker containers and not the versions of Python and R on your computer\nTo see the Python version number insert in your study_definition.py\nimport sys\nprint(sys.implementation.version)\nTo see the R version number insert into one of your R analysis scripts\nprint(R.version.string)",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Miscellaneous</span>"
+    ]
   },
   {
     "objectID": "02-04-misc.html#code-review",
     "href": "02-04-misc.html#code-review",
     "title": "16  Miscellaneous",
     "section": "16.3 Code review",
-    "text": "16.3 Code review\nThe Tidyteam (i.e., of the tidyverse, tidymodels, and mlops) code review principles are available here bear in mind the comments relate more to coding packages rather than analysis scripts."
+    "text": "16.3 Code review\nThe Tidyteam (i.e., of the tidyverse, tidymodels, and mlops) code review principles are available here bear in mind the comments relate more to coding packages rather than analysis scripts.",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Miscellaneous</span>"
+    ]
   },
   {
     "objectID": "02-05-docker-apple-silicon.html",
     "href": "02-05-docker-apple-silicon.html",
     "title": "17  Rosetta for Linux Docker feature on Apple Silicon Macs",
     "section": "",
-    "text": "From Docker version 4.25.0 the Rosetta for Linux feature is now enabled. We recommend you leave this enabled, as the OpenSAFELY Docker containers will run faster on your machine. To check it is enabled\n\nGo into Docker Desktop Dashboard\nGo into Settings | General tab\nCheck the box for Use Rosetta for x86/amd64 emulation on Apple Silicon\n\n\n\n\n\n\n\n\n\n\nIf you are using a version of Docker between versions 4.16.0 and 4.25.0 we recommend enabling this feature which was then in beta. To enable this\n\nOpen the Docker Desktop Dashboard and go into Settings (click the cog icon in top right hand corner)\nGo to Features in development and within that the Beta features tab\nCheck the box for Use Rosetta for x86/amd64 emulation on Apple Silicon\nClick Apply & restart"
+    "text": "From Docker version 4.25.0 the Rosetta for Linux feature is now enabled. We recommend you leave this enabled, as the OpenSAFELY Docker containers will run faster on your machine. To check it is enabled\n\nGo into Docker Desktop Dashboard\nGo into Settings | General tab\nCheck the box for Use Rosetta for x86/amd64 emulation on Apple Silicon\n\n\n\n\n\n\n\n\n\n\nIf you are using a version of Docker between versions 4.16.0 and 4.25.0 we recommend enabling this feature which was then in beta. To enable this\n\nOpen the Docker Desktop Dashboard and go into Settings (click the cog icon in top right hand corner)\nGo to Features in development and within that the Beta features tab\nCheck the box for Use Rosetta for x86/amd64 emulation on Apple Silicon\nClick Apply & restart",
+    "crumbs": [
+      "grpEHR best practice in the OpenSAFELY system",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Rosetta for Linux Docker feature on Apple Silicon Macs</span>"
+    ]
+  },
+  {
+    "objectID": "99-session-info.html",
+    "href": "99-session-info.html",
+    "title": "18  Session information for reproducibility",
+    "section": "",
+    "text": "18.1 Session information",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Session information for reproducibility</span>"
+    ]
   },
   {
     "objectID": "99-session-info.html#session-information",
     "href": "99-session-info.html#session-information",
     "title": "18  Session information for reproducibility",
-    "section": "18.1 Session information",
-    "text": "18.1 Session information\n\n\nClick here for session information\n\n\nsessionInfo()\n## R version 4.3.2 (2023-10-31)\n## Platform: aarch64-apple-darwin20 (64-bit)\n## Running under: macOS Sonoma 14.1.1\n## \n## Matrix products: default\n## BLAS:   /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRblas.0.dylib \n## LAPACK: /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0\n## \n## locale:\n## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n## \n## time zone: Europe/London\n## tzcode source: internal\n## \n## attached base packages:\n## [1] stats     graphics  grDevices utils     datasets  methods   base     \n## \n## loaded via a namespace (and not attached):\n##  [1] htmlwidgets_1.6.2 compiler_4.3.2    fastmap_1.1.1     cli_3.6.1        \n##  [5] tools_4.3.2       htmltools_0.5.7   rmarkdown_2.25    knitr_1.45       \n##  [9] jsonlite_1.8.7    xfun_0.41         digest_0.6.33     rlang_1.1.2      \n## [13] evaluate_0.23\nsessioninfo::session_info()\n## ─ Session info ───────────────────────────────────────────────────────────────\n##  setting  value\n##  version  R version 4.3.2 (2023-10-31)\n##  os       macOS Sonoma 14.1.1\n##  system   aarch64, darwin20\n##  ui       X11\n##  language (EN)\n##  collate  en_US.UTF-8\n##  ctype    en_US.UTF-8\n##  tz       Europe/London\n##  date     2023-11-15\n##  pandoc   3.1.9 @ /opt/homebrew/bin/ (via rmarkdown)\n## \n## ─ Packages ───────────────────────────────────────────────────────────────────\n##  package     * version date (UTC) lib source\n##  cli           3.6.1   2023-03-23 [1] CRAN (R 4.3.0)\n##  digest        0.6.33  2023-07-07 [1] CRAN (R 4.3.1)\n##  evaluate      0.23    2023-11-01 [1] CRAN (R 4.3.1)\n##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.3.0)\n##  htmltools     0.5.7   2023-11-03 [1] CRAN (R 4.3.2)\n##  htmlwidgets   1.6.2   2023-03-17 [1] CRAN (R 4.3.0)\n##  jsonlite      1.8.7   2023-06-29 [1] CRAN (R 4.3.0)\n##  knitr         1.45    2023-10-30 [1] CRAN (R 4.3.1)\n##  rlang         1.1.2   2023-11-04 [1] CRAN (R 4.3.2)\n##  rmarkdown     2.25    2023-09-18 [1] CRAN (R 4.3.1)\n##  sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.3.0)\n##  xfun          0.41    2023-11-01 [1] CRAN (R 4.3.1)\n## \n##  [1] /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library\n## \n## ──────────────────────────────────────────────────────────────────────────────\nquarto::quarto_version()\n## [1] '1.3.450'"
+    "section": "",
+    "text": "Click here for session information\n\n\nsessionInfo()\n## R version 4.3.3 (2024-02-29)\n## Platform: aarch64-apple-darwin20 (64-bit)\n## Running under: macOS Sonoma 14.4.1\n## \n## Matrix products: default\n## BLAS:   /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRblas.0.dylib \n## LAPACK: /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0\n## \n## locale:\n## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n## \n## time zone: Europe/London\n## tzcode source: internal\n## \n## attached base packages:\n## [1] stats     graphics  grDevices utils     datasets  methods   base     \n## \n## loaded via a namespace (and not attached):\n##  [1] htmlwidgets_1.6.4 compiler_4.3.3    fastmap_1.1.1     cli_3.6.2        \n##  [5] tools_4.3.3       htmltools_0.5.8   rstudioapi_0.16.0 rmarkdown_2.26   \n##  [9] knitr_1.45        jsonlite_1.8.8    xfun_0.43         digest_0.6.35    \n## [13] rlang_1.1.3       evaluate_0.23\nsessioninfo::session_info()\n## ─ Session info ───────────────────────────────────────────────────────────────\n##  setting  value\n##  version  R version 4.3.3 (2024-02-29)\n##  os       macOS Sonoma 14.4.1\n##  system   aarch64, darwin20\n##  ui       X11\n##  language (EN)\n##  collate  en_US.UTF-8\n##  ctype    en_US.UTF-8\n##  tz       Europe/London\n##  date     2024-03-28\n##  pandoc   3.1.12.3 @ /opt/homebrew/bin/ (via rmarkdown)\n## \n## ─ Packages ───────────────────────────────────────────────────────────────────\n##  package     * version date (UTC) lib source\n##  cli           3.6.2   2023-12-11 [1] CRAN (R 4.3.2)\n##  digest        0.6.35  2024-03-11 [1] CRAN (R 4.3.3)\n##  evaluate      0.23    2023-11-01 [1] CRAN (R 4.3.1)\n##  fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.3.0)\n##  htmltools     0.5.8   2024-03-25 [1] CRAN (R 4.3.3)\n##  htmlwidgets   1.6.4   2023-12-06 [1] CRAN (R 4.3.2)\n##  jsonlite      1.8.8   2023-12-04 [1] CRAN (R 4.3.2)\n##  knitr         1.45    2023-10-30 [1] CRAN (R 4.3.2)\n##  rlang         1.1.3   2024-01-10 [1] CRAN (R 4.3.2)\n##  rmarkdown     2.26    2024-03-05 [1] CRAN (R 4.3.3)\n##  rstudioapi    0.16.0  2024-03-24 [1] CRAN (R 4.3.3)\n##  sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.3.0)\n##  xfun          0.43    2024-03-25 [1] CRAN (R 4.3.3)\n## \n##  [1] /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library\n## \n## ──────────────────────────────────────────────────────────────────────────────\nquarto::quarto_version()\n## [1] '1.4.552'",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Session information for reproducibility</span>"
+    ]
   }
 ]
